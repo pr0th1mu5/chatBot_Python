@@ -67,11 +67,9 @@ class TelegramBot:
         link_requisicao = f'{self.url_base}sendMessage?chat_id={chat_id}&text={resposta}'
         
         requests.get(link_requisicao)
-
-
 bot = TelegramBot()
 bot.Iniciar()
-
+#### Fim do código.
 
     
     
