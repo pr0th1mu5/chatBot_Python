@@ -69,8 +69,9 @@ class TelegramBot:
         link_requisicao = f'{self.url_base}sendMessage?chat_id={chat_id}&text={resposta}'
         
         requests.get(link_requisicao)
-bot = TelegramBot() 
-bot.Iniciar()
+        '''A partir desse ponto, volte as chamadas logo a frente para a primeira coluna do código python. Não conseguir fazer isso no git ;)'''
+        bot = TelegramBot() 
+        bot.Iniciar()
 -------------------------------------------------------------------------------
 #### Fim do código.
 
