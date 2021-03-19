@@ -23,7 +23,8 @@ class TelegramBot:
         self.url_base = f'https://api.telegram.org/bot{token}/'
 
 
-#### Inicia o chat pegando os dados que interessam das mensagens e chama fução para criar resposta se ela for diferente de "None", que é quando alguém digita qualquer coisa que não seja "professor"
+#Inicia o chat pegando os dados que interessam das mensagens e chama fução para criar resposta se ela for diferente de "None", que é quando alguém digita qualquer coisa que não seja "professor"
+
     def Iniciar(self):
         update_id = None
         while True:
@@ -39,7 +40,8 @@ class TelegramBot:
                       self.responder(resposta, chat_id)
                   
 
-#### Obter mensagens escritas no chat e verifica sempre a seguinte enviada a cada 100 milissegundos. 
+#Obter mensagens escritas no chat e verifica sempre a seguinte enviada a cada 100 milissegundos. 
+
     def obter_novas_mensagens(self, update_id):
         link_requisicao = f'{self.url_base}getUpdates?timeout=100'
         if update_id:
@@ -47,7 +49,7 @@ class TelegramBot:
         resultado = requests.get(link_requisicao)
         return json.loads(resultado.content)
 
-#### Criar uma resposta. Aqui o bot só responde se a palavra chamada lá no chat for "professor". Não há nenhum outro tipo de interação e nem como os estudantes saber que ele vai responder sem que o administrador do grupo avise antes. Isso será informado no cabeçalho de detalhamento do grupo.
+#Criar uma resposta. Aqui o bot só responde se a palavra chamada lá no chat for "professor". Não há nenhum outro tipo de interação e nem como os estudantes saber que ele vai responder sem que o administrador do grupo avise antes. Isso será informado no cabeçalho de detalhamento do grupo.
 
     def criar_resposta(self, mensagem):       
         if mensagem.lower() == 'professor':
@@ -62,13 +64,14 @@ class TelegramBot:
             '''
         elif mensagem == '4':
             return f'''Eu aconselho a mandar perguntas que não são sobre o horário e as atividades no privado. {os.linesep} Se for algo sério e de urgência, direto pro e-mail do meu criador: cleciosousa@ufpi.edu.br por que ele sempre olha os e-mails.{os.linesep}{os.linesep}Se era isso, é issAew... senão, digita "professor" de novo pra ver o menu novamente. ;)'''                            
-    # Responder
+    #Essa função vai Responder após criar a resposta na função anterior.
     def responder(self, resposta, chat_id):      
         link_requisicao = f'{self.url_base}sendMessage?chat_id={chat_id}&text={resposta}'
         
         requests.get(link_requisicao)
-bot = TelegramBot()
-bot.Iniciar()
+bot = TelegramBot()#Aqui é ativado o bot
+bot.Iniciar()#Aqui é iniciado.
+-------------------------------------------------------------------------------
 #### Fim do código.
 
     
