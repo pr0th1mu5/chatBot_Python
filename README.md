@@ -1,8 +1,7 @@
-#chatBot_Python - 
+# chatBot_Python
+### Um jeito interessante de otimizar as conversas entre docente e estudantes em tempos de pandemia.
 
-Um jeito interessante de otimizar as conversas entre docente e estudantes em tempos de pandemia.
-
-chatBot kinBot. 
+## chatBot kinBot
 
 
 Galera, se está disponível aí o código para todos possam modificá-lo e reutilizá-lo. 
