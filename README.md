@@ -3,9 +3,12 @@
 
 ## chatBot kinBot
 
+Créditos do código inicial: https://www.youtube.com/watch?v=4u9JQR0-Bgc
+Parabéns Jhonatan de Souza - devaprender.com pela ideia e muito obrigado por nos ajudar através desse vídeo!
 
-Galera, se está disponível aí o código para todos possam modificá-lo e reutilizá-lo. 
-A ideia foi inicial para eu ter como dar respostas rápidas a todos os meus estudantes, mas logo vi que outros professores também vão precisar. 
+Galera, está disponível aí o código para que todos possam modificá-lo e reutilizá-lo. 
+A ideia do código alterado foi para eu ter como dar respostas rápidas a todos os meus estudantes. Antes ele respondia a qualquer um logo após digitar qualquer coisa. Porém não é interessante ficar respondendo todo mundo sem que ninguém pergunte nada ao bot certo? Modifiquei o código para que ele só responda se digitar "professor". Após isso, vi que outros professores também vão precisar. 
+
 
 Vamos unir forças e prestar um trabalho voluntário solidário para ajudar a todos os guerreiros professores que precisam dessa ferramenta e fazer o nosso país tomar outro rumo. A solução sempre foi a educação! Conto com a ajuda de todos! Abraço.
 
